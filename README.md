@@ -1,22 +1,35 @@
-# Light
+# Matter Multi-Endpoint LED & Doorlock
 
-This example creates a Color Temperature Light device using the ESP
-Matter data model.
+Bu proje, ESP Matter kullanarak çoklu endpoint desteği ile LED ve kapı kilidi kontrolü sağlayan bir Matter cihazı örneğidir.
 
-## Quick Start: Clone and Setup
+## Özellikler
 
-To use this project, clone it ve esp-matter/examples klasörüne kopyalayın:
+- 🔒 Matter protokolü desteği
+- 💡 LED kontrolü
+- 🚪 Kapı kilidi kontrolü
+- 🔌 Çoklu endpoint desteği
+- 📱 Matter-uyumlu cihazlarla komisyon
+
+## Hızlı Başlangıç
+
+### Projeyi Klonlama
 
 ```sh
 git clone git@github.com:Empa-Electronics/Matter-Multi-Endpoint-Led-Doorlock.git
-cp -r Matter-Multi-Endpoint-Led-Doorlock/Deka_example <esp-matter>/examples/
+cd Matter-Multi-Endpoint-Led-Doorlock
 ```
 
-> **Not:** Proje, esp-matter/examples altında çalışacak şekilde tasarlanmıştır. Farklı bir klasörde çalıştırmak isterseniz, CMakeLists.txt ve yol ayarlarını güncellemeniz gerekebilir.
+### Derleme ve Yükleme
 
-Devamında, [esp-matter dokümantasyonunu](https://docs.espressif.com/projects/esp-matter/en/latest/esp32/developing.html) takip ederek derleyip yükleyebilirsiniz.
+ESP-IDF ve ESP Matter ortamınızı kurduktan sonra:
 
-See the [docs](https://docs.espressif.com/projects/esp-matter/en/latest/esp32/developing.html) for more information about building and flashing the firmware.
+```sh
+idf.py set-target esp32c6
+idf.py build
+idf.py flash monitor
+```
+
+Daha fazla bilgi için [ESP Matter dokümantasyonunu](https://docs.espressif.com/projects/esp-matter/en/latest/esp32/developing.html) inceleyebilirsiniz.
 
 ## 1. Additional Environment Setup
 

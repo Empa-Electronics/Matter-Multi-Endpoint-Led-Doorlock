@@ -1,0 +1,30 @@
+# Build directories
+build/
+dist/
+*.egg-info/
+
+# Dependencies
+dependencies.lock
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ESP-IDF specific
+sdkconfig.old
+managed_components/.component_hash
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Logs
+*.log
